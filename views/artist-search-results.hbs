@@ -1,0 +1,25 @@
+<div class="result-container">
+
+  {{#each artists}}
+    
+    <div class="artist-card">
+      
+    <img src="{{this.images.[0].url}}">
+    <h3>{{this.name}}</h3>
+    <form method="get" action="/albums">
+
+      <button class="view-album">
+        <a href="/albums/{{this.id}}">View Albums</a>
+      </button>
+
+    </form>
+    
+    </div>
+  {{else}}
+
+  <span>We could not find your artist.</span> 
+        
+    
+  {{/each}}
+  
+</div>
