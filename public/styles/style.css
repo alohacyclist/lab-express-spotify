@@ -13,13 +13,36 @@ body {
 }
 
 .search-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 35%;
+}
+
+#artist-search-form {
     display: flex;
-    flex-direction: row;
-    margin: auto;
-    align-content: center;
-    width: 40%;
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 70px;
+    flex-direction: column;
+    align-items: center;
+    height: 30px;
+}
+
+#artist-search {
+    font-size: 24px;
+}
+
+.search-btn {
+    margin-top: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: salmon;
+    color: #fff;
+}
+
+.search-action {
+    padding: 100px;
 }
 
 .result-container {
